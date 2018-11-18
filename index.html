@@ -16,8 +16,8 @@
 
         <div class="row">
             <div class="col s12">
-                <div class="card-panel teal">
-                    <p class="traint center-align white-text"> <i class="sizei material-icons">directions_transit</i>Train
+                <div class="card-panel #7986cb indigo lighten-2">
+                    <p class="traint center-align white-text"> <i class="sizei material-icons">train</i>Train
                         Scheduler</p>
                      <p class="center-align white-text">Current Time: <span id="datetime"></span></p>
                 </div>
@@ -50,31 +50,35 @@
         <div class="row center-align">
             <form class="col s12">
                 <div class="row">
-                    <div class="input-field col s6 offset-s3">
+                    <div class="input-field col s6 offset-s2">
+                        <i class="material-icons prefix">create</i>
                         <input id="train_name" type="text" class="validate">
                         <label for="train_name">Train Name</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6 offset-s3">
+                    <div class="input-field col s6 offset-s2">
+                        <i class="material-icons prefix">swap_horiz</i>
                         <input id="destination_name" type="text" class="validate">
                         <label for="destination_name">Destination</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6 offset-s3">
+                    <div class="input-field col s6 offset-s2">
+                        <i class="material-icons prefix">location_on</i>
                         <input id="start_input" type="text" class="timepicker">
                         <label for="start_input">Start</label>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field col s6 offset-s3">
+                    <div class="input-field col s6 offset-s2">
+                            <i class="material-icons prefix">sync</i>
                         <input id="frequency_input" type="text" class="validate">
                         <label for="frequency_input">Frequency</label>
                     </div>
                 </div>
 
-                <button class="btn waves-effect waves-light" id="button_submit" type="submit" name="action">Submit
+                <button class="btn waves-effect #7986cb indigo lighten-2" id="button_submit" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
 

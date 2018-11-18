@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.timepicker').timepicker({twelveHour: false});
+    $('.timepicker').timepicker({twelveHour: false, autoClose: true,});
   });
          
   var ct = moment()
@@ -109,4 +109,7 @@ database.ref().on("child_added", function(childSnapshot) {
   
     // Append the new row to the table
     $("#table_body").append(newRow);
+
+    ref.remove()
+
   });
